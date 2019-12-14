@@ -62,7 +62,7 @@ const App = () => {
         <div className="slide">
           <img src="/img/example2.jpg" />
           <Link to="/santa-claus" className="slide__title">
-            Let's gift to Santa Claus
+            Lets gift to Santa Claus
           </Link>
         </div>
       </Carousel>
