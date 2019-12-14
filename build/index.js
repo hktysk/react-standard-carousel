@@ -392,7 +392,7 @@ var App = function (props) {
   function ontouchend(e) {
     var touches = e.changedTouches[0];
     var diff = touches.pageX - coordX.current;
-    Math.abs(diff) > 150 ? handle(Math.sign(diff) > -1 ? 'before' : 'next') : setInlinePos(showItemIndex * carouselInlineWidth);
+    Math.abs(diff) > 30 ? handle(Math.sign(diff) > -1 ? 'before' : 'next') : setInlinePos(showItemIndex * carouselInlineWidth);
   }
   /* style for arrow icon on both sides */
 
