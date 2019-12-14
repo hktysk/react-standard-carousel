@@ -137,7 +137,7 @@ const App: React.FC<Props> = (props) => {
   function ontouchend(e: any): void {
     const touches = e.changedTouches[0];
     const diff: number = touches.pageX - coordX.current;
-    Math.abs(diff) > 150
+    Math.abs(diff) > 30
       ? handle(Math.sign(diff) > -1 ? 'before' : 'next')
       : setInlinePos(showItemIndex * carouselInlineWidth)
   }
